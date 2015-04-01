@@ -1,0 +1,60 @@
+<div data-role="page">
+	<script src="/public/JsController/GT_Index.js" type="text/javascript"></script>
+  <div data-role="header" data-position="inline">
+    <h5 class="text-center">Verify GRN & Putaway</h5>
+  </div>
+
+  <div data-role="content">
+    <form class="form-horizontal" role="form" id="tForm">
+      <div class="form-group">
+        <p class="control-label small Float-Left Margin-Left-p10">Store No</p>
+        <div class="col-xs-offset-5 Margin-Right-p10">
+          <input type="text" class="form-control input-sm" id="StoreNo" placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <p class="control-label small Float-Left Margin-Left-p10">BarCode</p>
+        <div class="col-xs-offset-5 Margin-Right-p10">
+          <input type="text" class="form-control input-sm" id="BarCode" placeholder="" onkeypress="LoadRecord(event);">
+        </div>
+      </div>
+      <div class="form-group">
+        <p class="control-label small Float-Left Margin-Left-p10">Product Code</p>
+        <div class="col-xs-offset-5 Margin-Right-p10">
+          <input type="text" class="form-control input-sm" id="ProductCode" placeholder="" disabled>
+        </div>
+      </div>
+      <div class="form-group">
+        <p class="control-label small Float-Left Margin-Left-p10">Description</p>
+        <div class="col-xs-offset-5 Margin-Right-p10">
+          <input type="text" class="form-control input-sm" id="Description" placeholder="" disabled>
+        </div>
+      </div>
+      <div class="form-group">
+        <p class="control-label small Float-Left Margin-Left-p10">Dimension Qty</p>
+        <div class="col-xs-offset-5 Margin-Right-p10">
+          <input type="text" class="form-control input-sm" id="DimensionQty" placeholder="" onkeypress="document.getElementById('Vol').focus();">
+        </div>
+      </div>
+      <div class="form-group">
+        <p class="control-label small Float-Left Margin-Left-p10">Vol</p>
+        <div class="col-xs-offset-5 Margin-Right-p10">
+          <input type="text" class="form-control input-sm" id="Vol" placeholder="" onkeypress="document.getElementById('Wt').focus();">
+        </div>
+      </div>
+      <div class="form-group">
+        <p class="control-label small Float-Left Margin-Left-p10">Wt</p>
+        <div class="col-xs-offset-5 Margin-Right-p10">
+          <input type="text" class="form-control input-sm" id="Wt" placeholder="" onkeypress="document.getElementById('Update').focus();">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="text-center">
+          <button id="Update" type="button" class="btn btn-default btn-sm">Update</button>&nbsp;&nbsp;
+          <button type="button" class="btn btn-default btn-sm" onclick="Rho.WebView.navigateBack();">Back</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+</div>

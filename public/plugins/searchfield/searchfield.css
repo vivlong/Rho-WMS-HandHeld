@@ -1,0 +1,46 @@
+/* 
+	SearchField
+*/
+
+/* default (inactive field) */
+.sf_inactive{
+
+}
+/* on focus (when field is clicked on)  */
+.sf_active{
+	background:#fff;
+	color:#333;
+}
+/* with text (when field is inactive but contains user's input)  */
+.sf_text{
+	background:#fff;
+}
+
+/* suggestions box */
+.sf_suggestion{
+	position:absolute;
+	z-index: 6;
+}
+.sf_suggestion ul{
+	position:relative;
+	margin:0;
+	padding:0;
+	background:rgb(157, 236, 253);/*#86BAC7*/
+	top:0;
+	left:0;
+}
+.sf_suggestion li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.sf_suggestion li a{
+	font-family:Tahoma;
+	display:block;
+	text-indent:5px;
+	color:#000;
+	text-decoration: none;
+}
+.sf_suggestion li.selected a{
+	background:rgb(153,180,209);/*#3D91A5*/
+}

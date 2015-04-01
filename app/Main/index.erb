@@ -1,0 +1,23 @@
+<div data-role="page">
+  <script type="text/javascript">
+  function Jump(ModelName){
+    var str = '/app/' + ModelName + '/index';
+    Rho.WebView.navigate(str);
+  }
+  </script>
+	<div data-role="header" data-position="inline">
+	  <h5 class="text-center">Welcome To SysFreight WMS</h5><br/>
+	</div>
+
+  <div data-role="content">
+    <ul class="nav nav-pills nav-stacked text-center">
+      <li><a class="btn btn-default btn-sm" href="<%= Rho::Application.startURI %>">Assigned Tasks</a></li>
+      <li><a class="btn btn-default btn-sm" href="javascript:" onclick="Jump('VGP');">Verify GRN & Putaway</a></li>
+      <li><a class="btn btn-default btn-sm" href="javascript:" onclick="Jump('GT');">Goods Transfer</a></li>
+      <li><a class="btn btn-default btn-sm" href="javascript:" onclick="Jump('PICK');">Picking</a></li>
+      <li><a class="btn btn-default btn-sm" href="javascript:" onclick="Jump('PACK');">Packing</a></li>
+      <li><a class="btn btn-default btn-sm" href="javascript:" onclick="Jump('GT');">Verify GIN</a></li>
+    </ul>
+  </div>
+
+</div>

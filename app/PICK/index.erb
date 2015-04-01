@@ -1,0 +1,39 @@
+<div data-role="page">
+	<script src="/public/JsController/Picking_Index.js" type="text/javascript"></script>
+	<div data-role="header" data-position="inline">
+		<h5 class="text-center">Picking</h5>
+	</div>
+	<div data-role="content">
+		<div style="position:relative;">
+			<div class="control-group">
+				<label for="text_LoadCutomer" class="col-xs-3 control-label small">Cutomer</label>
+			    <div class="col-xs-8 SelectorAsInput">
+			    	<select name="selector_LoadCutomer" id="selector_LoadCutomer" class="form-control input-sm SelectorAsInput_Selector" onChange="SelectCustomer();"></select>
+			    	<input name="text_LoadCutomer" id="text_LoadCutomer" type="text" class="form-control input-sm SelectorAsInput_Input">
+			    </div>
+			</div>
+		  <div class="control-group clearfix Margin-Top-p10">
+		    <label for="text_LoadGIN" class="col-xs-3 control-label small">GIN</label>
+		    <div class="col-xs-8 SelectorAsInput">
+		      <select name="selector_LoadGIN" id="selector_LoadGIN" class="form-control input-sm SelectorAsInput_Selector" onChange="SelectGIN();" onmousedown="LoadGIN();searchfield('text_LoadGIN',SelectorValue)"></select>
+		      <input name="text_LoadGIN" id="text_LoadGIN" type="text" class="form-control input-sm SelectorAsInput_Input">
+		    </div>
+		  </div>
+		</div>
+		<div class="clearfix center-block Margin-Top-p10">
+		  <table class="footable table table-bordered table-condensed xsmall Table-Text" id="Picking">
+		    <thead>
+		      <tr>
+		        <th data-sort-initial="true">Customer</th>
+		        <th data-sort-initial="true">GIN</th>
+		        <th data-sort-initial="true">Issue Date</th>
+		        <th data-sort-ignore="true">Ref No</th>
+		      </tr>
+		    </thead>
+		    <tbody id="Picking_tbody"></tbody>
+		  </table>
+		</div>
+		<div class="text-right Margin-Top-m10"><button type="button" class="btn btn-default btn-sm" onclick="Rho.WebView.navigateBack();">Back</button></div>
+	</div>
+  
+</div>

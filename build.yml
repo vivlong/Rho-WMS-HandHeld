@@ -1,0 +1,28 @@
+sdkversion: "4.0.0"
+name: "WebApp"
+version: "1.0"
+vendor: "rhomobile"
+build: "debug"
+bbver: "6.0"
+applog: "rholog.txt"
+iphone:
+  configuration: "Release"
+  sdk: "iphonesimulator6.0"
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: "com.rhomobile.webapp"
+  BundleURLScheme: "webapp"
+wp:
+  productid: "453b0390-19d6-0131-ad54-3888e30bb106"
+symbian:
+  uid: "0xe1c47e98"
+android:
+  version: "2.3.3"
+  capabilities: 
+extensions:
+  - rhoconnect-client
+  - barcode
+app_type: "rhoelements"
+capabilities:
+  - motorola_browser
